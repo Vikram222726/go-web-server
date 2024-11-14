@@ -7,7 +7,7 @@ import (
 )
 
 const MAX_QUEUE_SIZE = 10000
-const MAX_WORKERS = 50
+const MAX_WORKERS = 20
 
 var workerPool = make(chan struct{}, MAX_WORKERS)
 var numChannel = make(chan int, MAX_QUEUE_SIZE)
